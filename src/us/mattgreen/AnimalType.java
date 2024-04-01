@@ -41,7 +41,13 @@ public class AnimalType {
     }
 
     private void createCat(Scanner scanner) {
+        System.out.println("Enter cat's name:");
+        String name = scanner.nextLine();
+        System.out.println("How many mice has the cat killed?");
+        int micekilled = scanner.nextInt();
+        scanner.nextLine();
 
+        zoo.add(new Cat(micekilled, name));
     }
 
     private void createTeacher(Scanner scanner) {
