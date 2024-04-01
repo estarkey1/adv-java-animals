@@ -51,7 +51,13 @@ public class AnimalType {
     }
 
     private void createTeacher(Scanner scanner) {
+        System.out.println("Enter teacher's name:");
+        String name = scanner.nextLine();
+        System.out.println("Enter teacher's age:");
+        int age = scanner.nextInt();
+        scanner.nextLine();
 
+        zoo.add(new Teacher(age, name));
     }
 }
 
