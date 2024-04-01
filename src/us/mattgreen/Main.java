@@ -12,12 +12,6 @@ public class Main {
 
         AnimalType animalType = new AnimalType(zoo);
 
-        // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
-        // End Lines to Replace
-
         animalType.addAnimal();
 
         for (Talkable thing : zoo) {
