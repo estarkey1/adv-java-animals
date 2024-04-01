@@ -31,7 +31,13 @@ public class AnimalType {
     }
 
     private void createDog(Scanner scanner) {
+        System.out.println("Enter dog's name:");
+        String name = scanner.nextLine();
+        System.out.println("Is the dog friendly? (true/false):");
+        boolean friendly = scanner.nextBoolean();
+        scanner.nextLine();
 
+        zoo.add(new Dog(friendly, name));
     }
 
     private void createCat(Scanner scanner) {
